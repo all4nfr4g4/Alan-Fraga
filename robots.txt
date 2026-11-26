@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://all4nfr4g4.github.io/Alan-Fraga/sitemap.xml

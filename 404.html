@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#080b09" />
+    <title>404 — Rota não encontrada · Alan Fraga</title>
+    <link rel="icon" href="/Alan-Fraga/assets/favicon.svg" type="image/svg+xml" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #080b09;
+        --line: rgba(214, 235, 205, 0.12);
+        --text: #eef3ea;
+        --muted: #9aa795;
+        --subtle: #7c8a79;
+        --accent: #b8f24a;
+        --mono: "DM Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        --sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+        --display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100svh;
+        display: grid;
+        margin: 0;
+        place-items: center;
+        padding: 28px;
+        color: var(--text);
+        background:
+          radial-gradient(700px 500px at 80% 0%, rgba(184, 242, 74, 0.08), transparent 62%),
+          radial-gradient(600px 400px at 0% 100%, rgba(95, 227, 192, 0.05), transparent 62%),
+          var(--bg);
+        font: 400 16px/1.7 var(--sans);
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        width: min(640px, 100%);
+        padding: clamp(28px, 6vw, 54px);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: linear-gradient(150deg, #121a13, #0b100c);
+        box-shadow: 0 34px 100px rgba(0, 0, 0, 0.5);
+      }
+      .status {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin: 0 0 22px;
+        color: var(--subtle);
+        font: 400 9px var(--mono);
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .status i {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 12px rgba(184, 242, 74, 0.7);
+      }
+      .code {
+        margin: 0 0 8px;
+        color: var(--accent);
+        font: 500 64px/1 var(--mono);
+        letter-spacing: -0.06em;
+      }
+      h1 {
+        margin: 0 0 14px;
+        font: 700 clamp(30px, 6vw, 44px) / 1.08 var(--display);
+        letter-spacing: -0.05em;
+      }
+      h1 span {
+        color: #8b9987;
+      }
+      p {
+        margin: 0 0 26px;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.8;
+      }
+      .terminal {
+        margin-bottom: 26px;
+        padding: 12px 14px;
+        border: 1px dashed rgba(184, 242, 74, 0.2);
+        border-radius: 8px;
+        color: var(--muted);
+        background: rgba(184, 242, 74, 0.04);
+        font: 400 10px/1.9 var(--mono);
+      }
+      .terminal b {
+        color: var(--accent);
+        font-weight: 400;
+      }
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        min-height: 44px;
+        padding: 0 18px;
+        border-radius: 999px;
+        color: #0a0f06;
+        background: var(--accent);
+        font: 600 11px var(--sans);
+        text-decoration: none;
+        transition: background 0.2s ease, transform 0.2s ease;
+      }
+      a:hover {
+        background: #d3fa82;
+        transform: translateY(-2px);
+      }
+      a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="status"><i></i> erro 404 · rota não encontrada</p>
+      <p class="code">404</p>
+      <h1>Essa rota não existe.<br /><span>Mas o contexto, sim.</span></h1>
+      <p>
+        O endereço que você tentou acessar não faz parte deste portfólio. Talvez tenha sido movido, digitado com um
+        detalhe a mais ou simplesmente nunca tenha existido.
+      </p>
+      <div class="terminal">
+        <div><b>alan@blue-team:~$</b> localizar --rota</div>
+        <div>↳ resultado: 0 correspondências</div>
+        <div>↳ ação: retornar à página inicial</div>
+      </div>
+      <a href="/Alan-Fraga/">Voltar ao início <span aria-hidden="true">↗</span></a>
+    </main>
+  </body>
+</html>
